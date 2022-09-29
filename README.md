@@ -5,8 +5,6 @@ This package is an implementation of the [Pusher Beams Node Server SDK](https://
 I've ported this code over from the 1.2.4 SDK at time of writing and will do my best to update where required.
 In terms of compatability, I've implemented most of the tests at [in the Node Server repo](https://github.com/pusher/push-notifications-node/tree/master/__tests__) and have them passing - although most of the tests are for ensuring the correct params are passed through.
 
-I've added an additional option to the `PushNotifications` class, so you can provide your own `fetcher` if you want to.
-
 ## Usage
 
 ```

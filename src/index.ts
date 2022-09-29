@@ -12,7 +12,6 @@ export const INTEREST_ARRAY_MAX_LENGTH = 100;
 class PushNotifications {
   private readonly instanceId: string;
   private readonly secretKey: string;
-  private readonly fetcher: Fetcher;
   private readonly endpoint: string;
 
   constructor(options: PushNotifications.Options) {
@@ -40,7 +39,6 @@ class PushNotifications {
 
     this.instanceId = options.instanceId;
     this.secretKey = options.secretKey;
-    this.fetcher = options.fetcher ?? fetch;
 
     this.endpoint =
       options.endpoint ??
@@ -206,7 +204,7 @@ class PushNotifications {
       body?: Record<string, any>;
     }
   ) {
-    return this.fetcher(`${this.endpoint}${options.path}`, {
+    return fetch(`${this.endpoint}${options.path}`, {
       method: options.method,
       body: options.body ? JSON.stringify(options.body) : undefined,
       headers: {

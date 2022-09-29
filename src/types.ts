@@ -1,14 +1,8 @@
-type Fetcher = (
-  input: RequestInfo | URL,
-  init?: RequestInit
-) => Promise<Response>;
-
 declare namespace PushNotifications {
   interface Options {
     instanceId: string;
     secretKey: string;
     endpoint?: string;
-    fetcher?: Fetcher;
   }
 
   interface PublishRequestBase {
