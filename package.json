@@ -10,6 +10,17 @@
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "Pusher",
+    "Beams",
+    "Cloudflare",
+    "Workers",
+    "Fetch",
+    "jose",
+    "V8",
+    "deno",
+    "server sdk"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
