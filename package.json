@@ -21,6 +21,10 @@
     "deno",
     "server sdk"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clgeoio/pusher-beams-fetch.git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
